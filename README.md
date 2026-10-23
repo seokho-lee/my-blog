@@ -10,4 +10,10 @@
 
 ## 저장소 구성
 
-블로그 글과 사이트 소스가 이 저장소에 함께 담길 예정입니다.
+빌드 도구 없이 HTML/CSS로 만든 정적 사이트이며, GitHub Pages로 배포합니다.
+
+- `index.html` — 글 목록 (메인 페이지)
+- `posts/` — 블로그 글
+- `assets/style.css` — 공통 스타일
+
+블로그 주소: https://seokho-lee.github.io/my-blog/

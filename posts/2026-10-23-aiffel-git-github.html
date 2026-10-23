@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>아이펠에서 Git과 GitHub를 배운 날 · my-blog</title>
+  <meta name="description" content="모두의연구소 아이펠 수업에서 Git과 GitHub를 배운 기록">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="../">my-blog</a>
+      <nav class="site-nav">
+        <a href="https://github.com/seokho-lee/my-blog">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="post">
+      <header class="post-header">
+        <div class="meta">
+          <time datetime="2026-10-23">2026년 10월 23일</time>
+          <span class="tag">AIFFEL</span>
+          <span class="tag">Git</span>
+        </div>
+        <h1>아이펠에서 Git과 GitHub를 배운 날</h1>
+      </header>
+
+      <div class="post-body">
+        <p>오늘 모두의연구소 아이펠 수업에서 Git과 GitHub를 배웠다. 이름만 많이 들어 봤지 제대로 써 본 적은 없었는데, 직접 해 보니 생각보다 훨씬 재미있었다.</p>
+
+        <h2>Git과 GitHub는 다르다</h2>
+        <p>가장 먼저 정리된 건 둘의 차이였다.</p>
+        <ul>
+          <li><strong>Git</strong>은 내 컴퓨터에서 파일의 변경 이력을 관리하는 도구다.</li>
+          <li><strong>GitHub</strong>는 그 Git 저장소를 인터넷에 올려 두고 공유하는 서비스다.</li>
+        </ul>
+        <p>로컬에서 Git으로 기록을 쌓고, 그걸 GitHub로 올린다고 생각하니 흐름이 한 번에 이해됐다.</p>
+
+        <h2>직접 해 본 순서</h2>
+        <p>배운 걸 바로 써 보려고 이 블로그 저장소를 만들었다. 실제로 해 본 순서는 이렇다.</p>
+        <pre><code>git init
+git remote add origin https://github.com/seokho-lee/my-blog.git
+git add README.md
+git commit -m "Initial commit"
+git push -u origin main</code></pre>
+        <ol>
+          <li><code>git init</code>으로 폴더를 Git 저장소로 만든다.</li>
+          <li><code>git remote add origin</code>으로 GitHub 저장소와 연결한다.</li>
+          <li><code>git add</code>로 올릴 파일을 고르고, <code>git commit</code>으로 기록을 남긴다.</li>
+          <li><code>git push</code>로 GitHub에 올린다.</li>
+        </ol>
+
+        <h2>에러도 배움이었다</h2>
+        <p>한 번에 되지는 않았다. 덕분에 기억에 더 오래 남을 것 같다.</p>
+        <div class="callout">
+          <p><strong>PowerShell에서 <code>&amp;&amp;</code> 에러</strong> — Windows PowerShell 5.1은 <code>&amp;&amp;</code>로 명령을 이어 쓸 수 없어서, 명령을 한 줄씩 따로 실행해야 했다.</p>
+        </div>
+        <div class="callout">
+          <p><strong>푸시할 때 인증 실패</strong> — 컴퓨터에 저장된 GitHub 로그인 정보가 맞지 않아서 생긴 문제였다. 저장된 정보를 지우고 다시 로그인하니 푸시가 됐다.</p>
+        </div>
+
+        <h2>오늘의 한 줄</h2>
+        <p>명령어 몇 줄로 내 컴퓨터의 폴더가 인터넷에 올라가고, 그게 이렇게 블로그가 되는 과정이 신기하고 재미있었다. 앞으로 배우는 것들도 여기에 꾸준히 기록해 보려고 한다.</p>
+
+        <a class="back" href="../">← 글 목록으로</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">© 2026 my-blog · Hosted on GitHub Pages</div>
+  </footer>
+</body>
+</html>
